@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 5;
+  padding: 20;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10x;
+  background: linear-gradient(135deg, #71b7e6, #44eb68);
+}
+
+.container{
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  
+  background: linear-gradient(135deg, rgba(255,255,255,0.70), rgba(255, 255, 255, 0.4));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 40px;
+  border: 5px solid rgba(255,255,255,0.20);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.container .title{
+  max-width: 800px;
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+}
+.container .title2{
+  max-width: 800px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+
+.col-6 form .form-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 0 0px 0;
+}
+form .form-row .form-group{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+  transition: all 0.3s ease;
+}
+form .form-group span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.col-6 form .form-row1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 40px 0px 0;
+}
+.col-6 form .form-row2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 40px 0px 0;
+}
+
+
+form .form-row .form-group{
+  padding-bottom: 5px;
+}
+.form-row1 .form-group1 input{
+  height: 12px;  
+  outline: none;
+  border: 1px solid #ccc;
+  border-bottom-width: 1px;
+  transition: all 0.3s ease;
+}
+
+.form-row .form-group input{
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+
+  background: linear-gradient(135deg, rgba(255,255,255,0.60), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 3px solid rgba(255,255,255,0.15);
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.15);
+}
+.form-row .form-group input:focus,
+.form-row .form-group input:invalid{
+  border-color: #71b7e6;
+}
+
+form .form-row .form-group{
+  font-size: 16px;
+  font-weight: 500;
+ }
+
+ form .form-check{
+  display: flex;
+  margin: 10px;
+  border-radius: 0px;
+  margin-left: 10px;
+  justify-content: safe;
+}
+
+form .form-check label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .form-check label .gender{
+  height: 22px;
+  width: 18px;
+  border-radius: 100%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+form input[type="radio"]{
+  background: #9b59b6;
+  border-color: #d9d9d9;
+  display: flex;
+}
+
+form .button{
+  height: 45px;
+  margin: 35px 0
+}
+form .button input{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #5aa0ce, #29b2ca);
+
+}
+form .button input:hover{
+ /* transform: scale(0.99); */
+ background: linear-gradient(-135deg, #71b7e6, #44eb68);
+ }
+  
+
+  </style>
+  </head>
+
+
+  
+  <body>
+    <div class="container">
+        <br>
+        <div class="title">Nation's Altar Registration</div>
+        <hr>
+            <div class="row">
+                <div class="col-6">
+                    <form action="https://sheetdb.io/api/v1/czp1g745tit4j" method="post" id="sheetdb-form">
+                        
+                        
+                        <br>
+                                                                     
+                        <div class="form-row">
+                            <div class="form-group">
+                                <span class="details">First Name</span>
+                                <input type="text" class="form-control" id="first_name" name="data[First Name]" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <span class="details">Last Name</span>
+                                <input type="text" class="form-control" id="last_name" name="data[Last Name]" placeholder="Enter your last name">
+                            </div>
+
+                            <div class="form-group">
+                                <span class="details">Phone Number</span>
+                                <input type="tel" class="form-control" id="phone" name="data[Phone Number]" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <span class="details">Other Phone Number</span>
+                                <input type="tel" class="form-control" id="phone" name="data[Other Phone Number]" placeholder="Enter alternative phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <span class="details">Ministry</span>
+                                <input type="text" class="form-control" id="ministry" name="data[Ministry]" placeholder="Where do you pray from?">
+                            </div>
+
+                            <div class="form-group">
+                                <span class="details">Residence</span>
+                                <input type="text" class="form-control" id="residence" name="data[Residence]" placeholder="Where do you stay?">
+                            </div>
+
+                            <div class="form-group">
+                                <span class="details">Email</span>
+                                <input type="email" class="form-control" id="email" name="data[Email]" placeholder="Enter your email">
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-row1">
+                            <div class="form-group1 col-md-6">
+                                <p>Gender</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Gender]" id="gender-1" value="Male">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Gender]" id="gender-2" value="Female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                
+                            </div> 
+                            
+                            <div class="form-group1 col-md-6">
+                                <p>First time at the Altar?</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[First Time]" id="firs_time-1" value="Yes">
+                                    <label class="form-check-label" for="first_time">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[First Time]" id="firs_time-2" value="No">
+                                    <label class="form-check-label" for="first_time">No</label>
+                                </div>
+                            </div> 
+                        </div>
+
+                       
+
+                        <br>
+                        <br>
+
+                        <div class="title2">Other details</div>
+                        <hr>
+                       
+                        <div class="form-row2">
+                            <div class="form-group1 col-md-6">
+                                <p>Are you a pastor?</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Pastor]" id="pastor-1" value="Yes">
+                                    <label class="form-check-label" for="pastor">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Pastor]" id="pastor-1" value="No">
+                                    <label class="form-check-label" for="pastor">No</label>
+                                </div>
+                            </div> 
+                            <div class="form-group1 col-md-6">
+                                <p>Are you a government official?</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Government Official]" id="official-1" value="Yes">
+                                    <label class="form-check-label" for="official">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Government Official]" id="official-2" value="No">
+                                    <label class="form-check-label" for="official">No</label>
+                                </div>
+                            </div>
+                            <div class="form-group1 col-md-6">
+                                <p>Are you a student?</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Student]" id="student-1" value="Yes">
+                                    <label class="form-check-label" for="student">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="data[Student]" id="student-2" value="No">
+                                    <label class="form-check-label" for="student">No</label>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                        
+                        <div class="button">
+                          
+                            <input type="submit" value="Register">
+                            <!-- <a href="file:///D:/Develop/Build/Final/test/Registration_Test%2002%20Page%2002.html" class="btn">OK</a> -->
+                          
+                          </div>   
+                        </a>                    
+                    </form>
+
+                    <script>
+                      var form = document.getElementById('sheetdb-form');
+                      form.addEventListener("submit", e => {
+                      e.preventDefault();
+                      fetch(form.action, {
+                      method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('Registration_Test 02 Page 02.html', 'blank');
+            // window.location.href="Registration_Test 02 Page 02.html";
+
+          });
+        });
+                    </script>
+
+
+
+                    <div id="output"></div>
+                </div>
+            </div>      
+        </div>
+  </body>
+</html>
